@@ -1,163 +1,179 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<meta name="description" content="Инди-студия разработки экспериментальных игр из России при поддержке ThatMaidGuy, изначально созданная с целью создания и дальнейшей поддержки игры Maidness">
-		
-		<title>Maid With Gun Games - Инди-разработчик игр</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maid With Gun Games</title>
+<meta name="description" content="Maid With Gun Games — инди-разработчик экспериментальных игр из России.">
+<meta property="og:title" content="Maid With Gun Games">
+<meta property="og:description" content="Инди-разработчик экспериментальных игр из России.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/mwgg.svg">
+<link rel="icon" href="assets/mwgg.svg">
+<style>
+  :root {
+    --bg: #0b0b0d;
+    --fg: #e8e8ea;
+    --dim: #76767e;
+    --line: #22222a;
+    --accent: #e03e52;
+  }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  *, *::before, *::after { box-sizing: border-box; }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/mwgg.svg" alt="" /></span>
-						<h1>Maid With Gun Games</h1>
-						<p>Инди-студия разработки экспериментальных игр из России при поддержке ThatMaidGuy, изначально созданная с целью создания и дальнейшей поддержки игры Maidness.</p>
-					</header>
+  html, body { height: 100%; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#whoami" class="active">Кто мы?</a></li>
-							<li><a href="#games">Игры</a></li>
-							<li><a href="#devs">Разработчики</a></li>
-							<li><a href="#contacts">Связь</a></li>
-						</ul>
-					</nav>
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 15px/1.6 ui-monospace, "SF Mono", "JetBrains Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.25rem;
+    -webkit-font-smoothing: antialiased;
+  }
 
-				<!-- Main -->
-					<div id="main">
+  main {
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+  }
 
-						<!-- Introduction -->
-							<section id="whoami" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Добро пожаловать на Maid With Gun Games!</h2>
-										</header>
-										<p>Maid With Gun появился в конце 2024, как команда разработчиков, состоящая из одного человека - 
-											Дмитрия Волкова (ThatMaidGuy), с изначальной целью централизации разработки и поддержки 
-											созданных игр, а также для потенциального расширения команды.</p>
+  .logo {
+    /* 1.5x от нативных 236x120 — кратно сетке 4px, пиксели остаются чёткими */
+    width: 354px;
+    max-width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    user-select: none;
+  }
 
-										<p>Здесь создаются и реализуются самые смелые идеи, которые притягивают людей к себе своей необычностью.</p>
-									</div>
-								</div>
-							</section>
+  h1 {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
 
-						<!-- First Section -->
-							<section id="games" class="main special">
-								<header class="major">
-									<h2>Игры</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="image fit"><img src="images/screens/aurora.png" alt="" /></span>
-										
-										<h3>Aurora Project</h3>
-										<p>Проект "Аврора" - это план по уничтожению компании конкурента с помощью специально подготовленной и обученной горничной.</p>
-										
-										<a href="https://thatmaidguy.itch.io/aurora-project" class="button">Скачать</a>
-									</li>
-									<li>
-										<span class="image fit"><img src="images/screens/aurora-training.jpg" alt="" /></span>
-										
-										<h3>Aurora Project: Training</h3>
-										<p>Игра для конкурса GMTK 2024, повествующая о процедуре обучения экспериментальной горничной по имени Аврора, которая должна быть готова ко всем ситуациям (даже самым странным)</p>
-										
-										<a href="https://thatmaidguy.itch.io/aurora-project-training" class="button">Скачать</a>
-									</li>
-									<li>
-										<span class="image fit"><img src="images/screens/bestgame.jpg" alt="" /></span>
-										
-										<h3>BESTGAME.EXE</h3>
-										<p>Короткая как сестра таланта экспериментальная пародия на проклятые файлы смерти и визуальные новеллы, использующий нестандартный способ геймплея для подобных игр - свободное перемещение по уровню от первого лица!</p>
-										
-										<a href="https://vkplay.ru/play/game/bestgameexe/" class="button">VK Play</a>
-									</li>
-									<li>
-										<span class="image fit"><img src="images/screens/melissa.jpg" alt="" /></span>
-										
-										<h3>Melissa The Maid</h3>
-										<p>Небольшой 3d-платформер о клонировании горничных, где мы должны сбежать из странного информационного пространства.</p>
-										
-										<a href="https://thatmaidguy.itch.io/melissa-the-maid" class="button">Скачать</a>
-									</li>
-								</ul>
-							</section>
+  .tagline {
+    margin: 1.5rem 0 0;
+    color: var(--dim);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
 
-						<!-- Second Section -->
-							<section id="devs" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Разработчики</h2>
-										</header>
-									</div>
-								</div>
+  h2 {
+    margin: 2.75rem 0 1rem;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
 
-								<div class="spotlight">
-									<div class="content">
-										<h1><b>Дмитрий Волков</b></h1>
-										<h3>Главный разработчик</h3>
-										<p>Единственный разработчик на данный момент. Самоучка. Отвечаю за техническую часть, 
-											геймдизайн и сценарий. Интересуюсь геймдевом как способом реализации человека и его мыслей. 
-											Люблю экшн-игры, а любимые жанры - платформер и шутер от первого лица.</p>
-										
-										<ul class="actions">
-											<li><a href="https://thatmaidguy.ru/" class="button primary">Личный сайт</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/photos/devs/thatmaidguy.jpeg" alt="" /></span>
-								</div>
-							</section>
+  h2::before, h2::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--line);
+    margin: 0 0.75rem 0.15em;
+  }
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Связь с нами</h2>
-								</header>
-								<iframe src="https://forms.yandex.ru/cloud/674a2710493639da4ff69f24/?iframe=1" frameborder="0" name="ya-form-674a2710493639da4ff69f24" width="650" style="height: 833px;"></iframe>
-							</section>
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-					</div>
+  .games li + li { margin-top: 0.4rem; }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Maid With Gun Games</h2>
-							<p>Экспериментируем с играми и выводим интересные решения</p>
-						</section>
-						<section>
-							<h2>Следить за нами:</h2>
-							<ul class="icons">
-								<li><a href="https://t.me/maidwithgun" class="icon brands fa-telegram alt"><span class="label">Telegram-канал</span></a></li>
-								<li><a href="https://youtube.com/@thatmaidguy" class="icon brands fa-youtube alt"><span class="label">YouTube главного разработчика</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Maid With Gun Games, 2025 - 20??. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
 
-			</div>
+  /* text-decoration, а не border-bottom: подчёркивание должно следовать
+     за переносом строки, иначе у длинных названий оно растягивается
+     линейкой во всю ширину блока */
+  .games a, .dev a {
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  a:hover, a:focus-visible {
+    color: var(--accent);
+  }
 
-	</body>
+  .games a:hover, .games a:focus-visible,
+  .dev a:hover, .dev a:focus-visible {
+    text-decoration-color: var(--accent);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+    font-size: 0.8125rem;
+    color: var(--dim);
+  }
+
+  .dev {
+    margin: 1.75rem 0 0;
+    font-size: 0.8125rem;
+    color: var(--dim);
+  }
+
+  .dev a { color: var(--fg); }
+
+  footer {
+    margin-top: 2.25rem;
+    font-size: 0.6875rem;
+    color: #4a4a52;
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 420px) {
+    h2 { margin-top: 2.25rem; }
+    h2::before, h2::after { width: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Maid With Gun Games</h1>
+
+  <img class="logo" src="assets/mwgg.svg" alt="Maid With Gun Games" width="236" height="120">
+
+  <p class="tagline">Инди-разработчик экспериментальных игр. Россия, с 2024.</p>
+
+  <h2>Игры</h2>
+  <ul class="games">
+    <li><a href="https://thatmaidguy.itch.io/goodnight-sweet-prince">Goodnight&nbsp;Sweet&nbsp;Prince</a></li>
+    <li><a href="https://thatmaidguy.itch.io/untitled-plus-pro-ultra-hd-deluxe-remastered">[untitled] Plus PRO ULTRA HD Deluxe Remastered</a></li>
+    <li><a href="https://thatmaidguy.itch.io/aurora-project">Aurora&nbsp;Project</a></li>
+    <li><a href="https://thatmaidguy.itch.io/aurora-project-training">Aurora&nbsp;Project:&nbsp;Training</a></li>
+    <li><a href="https://thatmaidguy.itch.io/bestgame">BESTGAME.EXE</a></li>
+    <li><a href="https://thatmaidguy.itch.io/melissa-the-maid">Melissa&nbsp;The&nbsp;Maid</a></li>
+  </ul>
+
+  <h2>Связь</h2>
+  <ul class="links">
+    <li><a href="https://t.me/maidwithgun">Telegram</a></li>
+    <li><a href="https://thatmaidguy.itch.io/">itch.io</a></li>
+    <li><a href="https://youtube.com/@thatmaidguy">YouTube</a></li>
+  </ul>
+
+  <p class="dev">Разработчик — <a href="https://me.maidga.me/">ThatMaidGuy</a></p>
+
+  <footer>© Maid With Gun Games, 2025&nbsp;—&nbsp;20??</footer>
+</main>
+</body>
 </html>
